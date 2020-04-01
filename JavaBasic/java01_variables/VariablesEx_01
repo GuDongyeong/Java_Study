@@ -1,0 +1,20 @@
+//소스코드가 포함된 패키지를 나타낸다
+package java01_variables;
+
+//클래스 정의 (VariablesEx_01 )
+// 자바프로그램의 기본 구성요소, 객체지향파트에서 자세히 다룸
+public class VariablesEx_01 {
+	// 메인 메소드 정의 - 프로그램의 시작점(Entry, Point, EP)
+	public static void main(String[] args) { 
+		System.out.println("하이!"); // 출력화면 ("하이!") ln없을시 하이!10 출력
+		
+		int number; // 변수 선언 - 변수 공간 생성하기(할당) [정수형 4B]
+		number = 10; // 변수 값 대입하기 - 변수 공간에 데이터 저장하기 
+		
+		System.out.println(number); //모니터에 변수에 저장된 값 출력한다. 출력화면 ("10")
+	} // main 메소드 end - 프로그램 종류점
+
+} // class end 
+
+// 한줄 전체 주석 단축키 : ctrl + shift + c
+// 드래그 한후 단축키
