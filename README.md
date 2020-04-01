@@ -1,2 +1,2 @@
 # Java_Study
-자바 공부
+[NCS] UIUX엔지니어링 및 응용 SW엔지니어링 양성과정
