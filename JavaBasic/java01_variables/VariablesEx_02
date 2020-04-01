@@ -1,0 +1,58 @@
+package java01_variables;
+
+public class VariablesEx_02 {
+	public static void main(String[] args) {
+		
+		//1. 변수 선언
+		// int형 변수 num 선언하기
+		int num;
+		
+		//2. 변수에 값 대입
+		// num변수에 333 저장하기
+		num = 333;
+		
+		//3. 변수의 값 출력하기 
+		// Console창에 출력되도록 하기
+		
+		//System.out.println(num);
+		//System.out.println("num변수의 값 :  : 333");
+		//System.out.println("num변수의 값 : "+ 333);
+		System.out.println("num변수의 값 : " + num);//+ 문자열 연결 기능
+		
+		// ------------------------------------------------
+		
+		double heightAverage; // 반 평균 키
+		heightAverage = 200.5;
+		
+		// ------------------------------------------------
+
+		char alpha; // 알파벳
+		alpha = 'A'; //65 유니코드
+		alpha = '하';
+		alpha = '/'; 
+		alpha = '3';//51
+		
+		// ------------------------------------------------
+
+		boolean isEmpty; 
+		
+		isEmpty = true;
+		isEmpty = false;
+		
+		System.out.println(isEmpty);
+		System.out.println("논리형 변수의 값 : "+ isEmpty);
+	
+		// ------------------------------------------------
+
+		int sum; //합계
+		
+		sum = num + 100;
+		//sum = 333 + 100;
+		//sum = 433;
+		
+		System.out.println(sum);
+
+		
+	}
+
+}
