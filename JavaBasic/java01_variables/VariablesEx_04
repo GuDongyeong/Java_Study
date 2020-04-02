@@ -1,0 +1,60 @@
+package java01_variables;
+
+public class VariablesEx_04 {
+	
+	public static void main(String[] args) {
+		
+		//학생의 나이
+		
+		int student_age;
+		int studentAge; //권장
+		
+		
+		//--------
+		
+		//int 1stNumber; //숫자로 시작하면 안됨
+		int firstNumber;
+		
+		//int int; //문법 키워드(예약어)를 식별자로 사용할 수 없다.
+		int intNum;
+		
+		// ------
+		
+		//에러는 아니지만 사용하지 말아야 할 이름들
+		
+		int _;
+		int _______;
+		int $;
+		int $_$_$$_;
+		
+		//의미없는 변수명 짓지 않기
+		
+		int a;
+		int b;
+		int c;
+		
+		
+		int num;
+		//int num;
+		int _num;
+		int num_;
+		//중복되거나 비슷한 변수명 금지, _ 나 $ 를 의미없이 과하게 사용하면 안 좋다.
+		
+		int num1;
+		int num2;
+		 //같은 이름을 여러 번 사용하고 싶을 때는 뒤에 숫자를 붙일 것
+		
+		//--------------------------
+		
+		//자바는 유니코드를 완벽하게 지원하지만 한글로 변수명 절대 짓지 말 것!
+		
+		int area; //넓이
+		
+		int 넓이;
+		//실행은 되지만 하지 말 것.기본적으로 영어에 기반한 체제, 인코딩 방식이 다르면 다른 곳에서 깨짐.
+		
+		
+		
+	}
+
+}
