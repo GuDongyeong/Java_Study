@@ -1,0 +1,37 @@
+package java01_variables;
+
+public class VariablesEx_05 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(777); //리터럴 상수 777
+		
+		int num = 500 + 600;
+				 //이 두 숫자는 상수
+		
+		//이름있는 상수 (이때 이름은 대문자로 지정해주면 관례적으로 이름있는 상수라는 것을 알 수 있다.)
+		
+		final int MAX;//변수의 상수화
+		
+		MAX = 100; // 딱 한번만 대입 가능. 이후 100으로 고정됨
+		//max = 200;  //에러 파이널 변수에 이미 값이 대입된 적이 있기 때문에 다시 대입하기 불가능
+		
+		System.out.println("최대값 : " + MAX);
+	
+	//-------------------------------
+		
+		final int STUDENT_NUM = 10; //총 인원
+		
+		int sum = 976; //총점
+		
+		double avg;//평균
+		
+		avg = sum / (double)STUDENT_NUM;//형변환을 해줘야 제대로 계산됨
+		
+		System.out.println("총 인원 : "  + STUDENT_NUM);
+		System.out.println("평균 : "  + avg);
+
+		
+	}
+		
+}
