@@ -1,0 +1,31 @@
+package java01_variables;
+
+public class VariablesEx_06 {
+
+	public static void main(String[] args) {
+		
+		//참조형 데이터 타입
+		VariablesEx_06 data;
+		
+		// 참조형 데이터타입
+		// String, 문자열  단일문자(char) 들의 나열 ""로 묶어서 표현.
+		// 문장을 표현하는 데이터타입
+		// 마치 기본형 데이터타입처럼 사용할 수 있도록 해놓음. 많이 쓰이기 때문
+		
+		String fruit;//문자열 변수 선언
+		
+		fruit = "Apple";//문자열 상수 "Apple"을 저장(대입)
+		System.out.println(fruit);
+		
+		fruit = "Banana";
+		System.out.println(fruit);
+		
+		
+		fruit = "Grape";
+		System.out.println("과일명 : " + fruit);
+		
+	
+	}
+	
+	
+}
