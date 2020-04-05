@@ -1,0 +1,68 @@
+package java02_operator;
+
+public class UnaryEx_02 {
+	public static void main(String[] args) {
+		
+		
+		//단항연산자 - 증감
+		
+		// ++ : 증가 연산자
+		// -- : 감소 연산자
+		
+		// 피연산자로 적용된 정수형?? 변수의 값을 1 증가/감소시킨다.
+		
+		int num;
+		
+		num = 15;
+		
+		System.out.println(num);//원본
+		System.out.println(num--);//연산 중 - 후위(후치) 감소연산자
+		System.out.println(num);//연산 후
+		
+		System.out.println("--------------");
+		
+		System.out.println(num);//원본
+		System.out.println(--num);//연산 중 - 전위(전치) 감소연산자
+		System.out.println(num);//연산 후
+		
+		// 증감연산자는 변수의 앞/뒤 모두 올 수 있다. 앞에 오면 전위(전치)연산자, 뒤에 오면 후위(후치)연산자
+		// 증감연산자의 위치에 따라 계산의 순서가 바뀐다. 
+		// 후치는 변수의 값을 활용한 후에, 전치는 활용 전에 연산한다.
+		
+		
+		System.out.println("--------------");
+		
+		num = 15;
+		System.out.println( num++ * 3);
+		
+		num = 15;
+		System.out.println( ++num * 3);
+		
+		
+		System.out.println( num + ++num);//이런식으로 혼동되게 사용하지 말 것
+		
+		num++;
+		num += 20;
+		//이런식으로 꺼내서 사용
+		
+		//코드 가독성이 떨어질 수도 있으니 최대한 증감연산자를 단독으로 쓰도록 하는 것이 좋다.
+		
+		
+		System.out.println("--------------");
+		
+		// 변수의 값을 1 증가시키기
+		
+		int n = 13;
+		
+		n = n + 1; //명령어 두개
+		
+		n += 1; // 명령어 두개
+		
+		n++; // 이걸 많이 사용함, 명령어 1개 짧고 빠르다.
+		
+		n += 4; // 2개 이상을 증가시킬 때는 이렇게 사용
+		
+				
+ 	}
+
+}
