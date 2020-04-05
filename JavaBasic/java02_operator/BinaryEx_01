@@ -1,0 +1,75 @@
+package java02_operator;
+
+public class BinaryEx_01 {
+
+	public static void main(String[] args) {
+	
+		//이항연산자 - 산술
+		// + - * / % 
+		
+		int num1 = 17, num2 =4; //피연산자
+		
+		//int n1 = 6, n2, n3 = 3, n4;//변수 여러개를 , 를 이용해 한번에 선언, 선언과 동시에 초기화할 수 있다.
+									// 그러나 다른 데이터타입을 한줄에 사용할 수는 없다.
+		
+		int result; //연산 결과 저장
+		
+		result = num1 + num2;
+//		result = 17 + 4; //num1, num2 변수의 값 활용
+//		result = 21;	// + 연산 결과값 반환(리턴)
+		// = Assign 대입 연산자, 왼쪽의 변수에 오른쪽의 값을 저장해주는 역할
+		//result 변수에 21이 저장된다.
+		
+		System.out.println("연산의 결과 : " + result);// + 문자열 연결 연산자
+//		System.out.println("연산의 결과 : " + 21);
+//		System.out.println("연산의 결과 : 21");//sysout 하나의 데이터를 모니터에 출력하는 기능
+		
+		System.out.println();
+		System.out.println("----나머지 연산자----");
+		//% : 나머지 연산자, modular, mod
+		
+		result = num1 % num2;
+		System.out.println("나머지 연산 결과 : " + result);
+	
+		System.out.println();
+		System.out.println("----산술 연산자----");
+		
+		System.out.println("num1 + num2 = " + num1+num2);
+//		System.out.println("num1 + num2 = " + 17 + 4);
+//		System.out.println("num1 + num2 = 17" + 4);
+//		System.out.println("num1 + num2 = 174");
+		//문자열을 먼저 만나기 때문에 두 + 기호를 문자열 연결 연산자로 인식
+		
+		System.out.println("num1 + num2 = " + (num1+num2) );
+//		System.out.println("num1 + num2 = " + (17+4) );
+//		System.out.println("num1 + num2 = " + (21) );
+//		System.out.println("num1 + num2 = 21");
+		
+		
+		System.out.println("num1 - num2 = " + (num1-num2) ); // 빼기
+		System.out.println("num1 * num2 = " + (num1*num2) ); // 곱하기
+		System.out.println("num1 / num2 = " + (num1/num2) ); // 나누기 연산자의 특성으로 몫을 구하고 있다.
+		System.out.println("num1 % num2 = " + (num1%num2) ); // 나머지
+	
+		// 연산은 반드시 피연산자들이 같은 데이터타입일 때만 가능하다.
+		// 산술 연산의 결과는 피연산자의 데이터타입과 같다.
+		
+		
+		System.out.println("----");
+		System.out.println("num1 / num2 = " + ( num1/num2) ); // int/int -> int
+		System.out.println("num1 / num2 = " + ( (double)num1/(double)num2) ); // double/double -> double
+//		System.out.println("num1 / num2 = " + ( (double)17/(double)4 ); // 단항연산자 (double) 뒤의 값의 데이터타입을 잠시 바꾼다.
+//		System.out.println("num1 / num2 = " + ( 17.0/(double)num2 );
+//		System.out.println("num1 / num2 = " + ( 17.0/4.0 );
+//		System.out.println("num1 / num2 = " + ( 4.25 );
+		
+		// 서로 다른 데이터타입의 연산을 수행하려면 형변환해야한다.
+		
+		System.out.println("num1 / num2 = " + ( num1/(double)num2) );
+//		System.out.println("num1 / num2 = " + ( 17/(double)4) ); // int/(double)int -> 강제형변환
+//		System.out.println("num1 / num2 = " + ( 17/4.0) ); // int/double
+//		System.out.println("num1 / num2 = " + ( 17.0/4.0) ); // double/double -> 자동형변환
+//		System.out.println("num1 / num2 = " + ( 4.25) ); // double
+	}
+		
+}
