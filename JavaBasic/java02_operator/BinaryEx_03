@@ -1,0 +1,59 @@
+package java02_operator;
+
+public class BinaryEx_03 {
+
+	public static void main(String[] args) {
+		
+		//이항연산자 - 관계, 비교
+		
+		// <	lt, less than
+		// >	gt, greater than
+		// <=	le, less than equal 
+		// >=	ge, greater than equal
+		// ==	eq, equal
+		// !=	ne, not equal, 같지 않은
+		
+		// 질문이라고 이해, 왼쪽 값이 오른쪽보다 큰지 작은지 같은지,,
+		// ** = 는 대입연산자, == 가 같음을 의미
+		// ! 는 컴퓨터에서 not이나 반대의 의미를 가지는 경우가 많다.
+		
+		// 관계연산의 결과(리턴)는 참/거짓(boolean 타입, true/false)
+		
+		int num1 = 20;
+		int num2 = 20;
+		
+		System.out.println("num1==num2 : "+ (num1==num2));
+		System.out.println("num1!=num2 : "+ (num1!=num2));
+		
+		System.out.println();
+		System.out.println("num1<num2 : "+ (num1<num2));
+		System.out.println("num1>num2 : "+ (num1>num2));
+		
+		System.out.println();
+		System.out.println("num1<=num2 : "+ (num1<=num2));
+		System.out.println("num1>=num2 : "+ (num1>=num2));
+		
+		//기준은 왼쪽
+		
+		
+		
+		System.out.println("----------------");
+		
+		boolean res1;
+		boolean res2;
+		
+		res1 = num1<num2;
+//		res1 = 20<20;
+//		res1 = false;
+		
+		res2 = num1==num2;
+//		res2 = 20==20;
+//		res2 = 20;
+		
+		System.out.println("res1의 값 : " + res1);
+		System.out.println("res2의 값 : " + res2);
+		
+	}
+	
+	
+}
