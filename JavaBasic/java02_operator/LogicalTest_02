@@ -1,0 +1,37 @@
+package java02_operator;
+
+public class LogicalTest_02 {
+	
+	public static void main(String[] args) {
+		
+		int a=5, b=6, c=10;
+
+		boolean res1;
+		
+		res1 = a<b || --a>c++; 
+		//     5<6      4 10      a = 4  c = 11
+		//		true   false
+		//     true
+		System.out.println("a="+a+",b="+b+",c="+c);
+							  //4       6       11
+
+		//or 연산은 피연산자 둘 중에 하나라도 참이면 결과가 참
+		//-> or 연산자의 왼쪽 피연산자가 참일 경우 오른쪽 피연산자를 확인(연산)하지 않는다.
+		
+		
+		boolean res2;
+		
+		res2 = c<b++ && c-->++a; 
+		//     11<6     11 > 5		a=5 b=7 c=10
+		//     false
+		
+		System.out.println("a="+a+",b="+b+",c="+c);
+		//                      5       7       10
+		//and 연산은 피연산자 둘 중에 하나라도 거짓이면 결과가 거짓
+		//-> and 연산자의 왼쪽 피연산자가 거짓일 경우 오른쪽 피연산자를 확인(연산)하지 않는다.
+		
+		//논리연산자의 단축 연산
+		//Shortcut for Logical Operator
+	}
+
+}
