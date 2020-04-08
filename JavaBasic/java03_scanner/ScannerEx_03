@@ -1,0 +1,64 @@
+package java03_scanner;
+
+import java.util.Scanner;
+
+	public class ScannerEx_03 {
+	
+	
+	
+
+		public static void main(String[] args) {
+		
+		// 문자열
+		
+		String str = "Apple";
+		
+		String str2 = new String("Banana");
+		//원래 참조형 데이터타입은 new를 사용해야 한다. 그러나 String만 예외적으로 위처럼 쓰는 것이 가능
+		//참조형이기 때문에 API 에서 설명을 찾아볼 수 있음
+		//String 은 java.lang 패키지에 있다.
+		// java.lang 은 자바 프로그래밍에 필요한 기본적인 클래스를 모아 놓은 패키지
+		// java.lang 패키지는 별도의 import 없이 사용 가능하다.
+		
+		
+		//charAt(in index) 은 String 클래스 안에 들어있음, index 위치의 글자를 반환(0부터 셈)
+		char ch = str.charAt(2);
+		
+		System.out.println(ch);
+		
+		
+		
+		System.out.println("-----------------");
+
+		// Scanner로 단일문자(char형) 입력받기
+		
+		Scanner sc = new Scanner(System.in); // 입력 객체
+		
+		System.out.print("문자열 입력 : ");
+		
+		String inputDate = sc.nextLine();// 문자열 입력
+		
+		char inputChar = inputDate.charAt(0);
+		System.out.println("0번째 단일 문자 = " + inputChar);
+		
+		
+		
+		System.out.println("-----------------");
+		
+		System.out.println("단일 문자 입력 받기 : ");
+		
+		char inputChar2 = sc.nextLine().charAt(0);
+		
+		System.out.println(inputChar2);
+		
+		
+		
+		System.out.println("-----------------");
+		
+		// 이 방법 말고 위에 있는 변수에 저장해서 사용하는 방법을 사용하세요.
+		System.out.println("성별 입력 : ");
+		System.out.println("입력한 성별 : " + sc.nextLine().charAt(0));
+		
+			
+	}
+}
