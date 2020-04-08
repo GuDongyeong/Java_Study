@@ -1,0 +1,36 @@
+package java03_scanner;
+
+public class ScannerEx_02 {
+
+	public static void main(String[] args) {
+		
+		//int형 데이터 입력받기, 출력해보기
+		
+		//1. 입력객체 변수 선언
+		java.util.Scanner in; //비효율적인 방법이지만 이렇게 클래스를 쓸 때마다 선언을 해줄 수도 있음
+		
+		//2. 입력객체 생성(new 연산자 이용)
+		in = new java.util.Scanner(System.in);
+		
+		//3. int형 데이터 입력받기
+		System.out.print("정수값 입력 : ");
+		int num = in.nextInt();
+
+		//4. 입력받은 int데이터 출력
+		System.out.println("입력받은 정수 : " + num);
+		
+		//ctrl +f7 : 작업중인 장의 포커스(커서)를 다른 곳으로 이동
+		
+		//백준 코딩 사이트
+		//프로그래머스
+		
+		
+		double d = in.nextDouble();
+		boolean b = in.nextBoolean();
+		int i = in.nextInt();
+		
+		//char ch = in.nextChar(); // char 전용 입력 메소드는 없음
+		
+		
+	}
+}
