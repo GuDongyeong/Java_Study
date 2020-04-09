@@ -1,0 +1,67 @@
+package java03_scanner;
+
+import java.util.Scanner;
+
+public class ScannerQuiz_02 {
+//학생 정보 관리 프로그램
+//	이름, 나이, 성별, 국어, 영어, 수학
+//	6가지 정보를 저장할 수 있는 변수를 만들고
+//	6가지 정보를 Scanner를 이용해 입력한 후에
+//	총점과 평균을 포함한 결과를 출력한다
+
+//===== 출력 =====
+//이름	나이	성별	국어	영어	수학	총점	평균
+//Alice	33		F		100		99		97		296		98.666666667
+	
+	public static void main(String[] args) {
+		
+		//필요한 변수들 생각하기
+//		Scanner
+
+//		이름, 나이, 성별, 국어, 영어, 수학
+//		총점과 평균
+		
+
+		Scanner in = new Scanner(System.in); //키보드 입력객체
+		
+		//정보 6개 입력
+		System.out.print("이름 입력하세요 : ");
+		String name = in.nextLine(); //이름
+//		System.out.println("[TEST] " + name);
+		
+		System.out.print("나이 입력하세요 : ");
+		int age = in.nextInt();
+//		System.out.println("[TEST] " + age);
+		
+		System.out.print("성별 입력하세요 : ");
+		in.nextLine(); //버퍼비우기
+		String str = in.nextLine();
+//		System.out.println("[TEST] str : " + str);
+		
+		char gender = str.charAt(0);
+//		System.out.println("[TEST] gender : " + gender);
+		
+		System.out.print("국어 점수 입력 : ");
+		int kor = in.nextInt();
+
+		System.out.print("영어 점수 입력 : ");
+		int eng = in.nextInt();
+
+		System.out.print("수학 점수 입력 : ");
+		int math = in.nextInt();
+//		System.out.println("[TEST] " + kor + "," + eng + "," + math);
+		
+		//총점, 평균 계산
+		int total = kor+eng+math;
+		double avg = total/(double)3;
+//		System.out.println("[TEST] " + total + "," + avg);
+		
+		//전체 출력
+		System.out.println("이름\t나이\t성별\t국어\t영어\t수학\t총점\t평균");
+		System.out.println(
+				name + "\t" + age + "\t" + gender
+				 + "\t" + kor + "\t" + eng + "\t" + math
+				 + "\t" + total + "\t" + String.format("%.2f", avg));
+		
+	}
+}
