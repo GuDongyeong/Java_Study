@@ -1,0 +1,19 @@
+package java04_control.condition;
+
+public class IfElse_02 {
+	public static void main(String[] args) {
+		
+		//홀수 짝수 판별 코드 작성해보세요.
+		
+		int num = 7;
+		
+		if ( num % 2 == 0) {
+			System.out.println("num은 짝수입니다.");
+		} else {
+			System.out.println("num은 홀수입니다.");
+		}
+		
+		
+	}
+
+}
