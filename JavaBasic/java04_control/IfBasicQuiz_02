@@ -1,0 +1,32 @@
+package java04_control.condition;
+
+import java.util.Scanner;
+
+public class IfBasicQuiz_02 {
+	public static void main(String[] args) {
+		
+	
+//	 + 세수를 입력 받아 가장 큰 수를 출력하시오
+	
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.print("num1을 입력하시오 : ");
+		int num1 = sc.nextInt();
+		System.out.print("num2를 입력하시오 : ");
+		int num2 = sc.nextInt();
+		System.out.print("num3를 입력하시오 : ");
+		int num3 = sc.nextInt();
+		
+		if(num1>=num2 && num1>=num3) {
+			System.out.println("가장 큰 수는 " + num1 + "입니다.");
+		}
+		if(num2>num1 && num2>=num3) {
+			System.out.println("가장 큰 수는 " + num2 + "입니다.");
+		}
+		if(num3>num1 && num3>num2) {
+			System.out.println("가장 큰 수는 " + num3 + "입니다.");
+		}
+
+	}
+
+}
