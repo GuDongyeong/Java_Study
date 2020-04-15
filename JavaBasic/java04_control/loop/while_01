@@ -1,0 +1,28 @@
+package java04_control.loop;
+
+public class While_01 {
+	public static void main(String[] args) {
+		//while loop
+		
+//		while(조건식) {
+//			//조건식이 참일 경우 반복 수행 코드
+//			//
+//			//조건식이 거짓일 경우 while문 중단
+//			//조건식이 참일 경우 {}블록을 수행하고 다시 조건식을 검사한다.
+//		}
+		
+		while(true) {
+			System.out.println("HI");
+		}
+		//무한반복, 무한루프, 무한 Loop
+		
+		//------------------------------
+		
+		//for문을 이용한 무한 루프
+//		for(;;) {
+//			System.out.println("Hello");
+////	}
+		
+	}
+
+}
