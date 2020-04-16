@@ -1,0 +1,39 @@
+package java04_control.loop;
+
+import java.util.Scanner;
+
+public class DoWhile_02 {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);//키보드 입력 객체
+		
+		int input;//사용자의 입력값
+		
+		int sum = 0;//총합계
+		
+//		do {
+//			System.out.print("Intput Number(종료 ==0) : ");
+//			input = sc.nextInt();
+//			
+//			sum+= input;//누적합계
+//		}while(input !=0);
+//		
+//		System.out.println("총 합계 :  " + sum);
+//		
+		
+		System.out.println("=======================");
+		
+		while(true) {//무한 loop
+			System.out.println("Intput Number(종료 ==0) : ");	
+			input = sc.nextInt();
+			
+			sum += input;//누적합계
+			
+			if(input == 0) {
+				break;
+			}
+		}
+		System.out.println("총합계 : "+ sum);
+	}
+
+}
