@@ -1,0 +1,29 @@
+package java04_control.loop;
+
+public class For_05 {
+	public static void main(String[] args) {
+		
+		
+		//1부터 10까지 총합 구하기
+		// 답 55
+		
+		// 반복횟수 : 10번
+		// 반복구간 : 1~10
+		// 초기식 : int i = 1	(반복구간의 시작값)
+		// 조건식 : i<=10		(반복구간의 끝값, 반복횟수)
+		// 증감식 : i++		(1씩 증가)
+
+		
+		//반복문 전과 후에 해야하는 일을 구분하고 정리해야한다.
+		int sum=0; //총합을 구할 땐 쓰레기값을 조심할 것!
+		
+		for( int i = 1 ;i<=10;i++) {//i, 1~10, *10
+				sum += i;
+		}
+		System.out.println(sum);
+		
+		
+		
+	}
+
+}
