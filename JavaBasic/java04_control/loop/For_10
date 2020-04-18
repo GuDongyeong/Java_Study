@@ -1,0 +1,25 @@
+package java04_control.loop;
+
+public class For_10 {
+	public static void main(String[] args) {
+		
+		
+		// 중첩 for loop
+		// 2~9단 구구단
+		
+		//반복횟수 : 8번
+		//반복구간 : 2~9
+		// 초기식 : int j = 2;			(반복구간의 시작값)
+		// 조건식 : j<=9;				(반복구간의 끝값, 반복횟수)
+		// 증감식 : j++					(1씩 증가)
+
+		
+		for( int j = 2;j<=9; j++) {//j, 2~9, x8
+		
+			for( int i=1; i<=9; i++) {//i, 1~9, x9
+				System.out.println( j + " X " + i + " = " + (j*i));
+			}
+			System.out.println("===============");
+		}
+	}
+}
