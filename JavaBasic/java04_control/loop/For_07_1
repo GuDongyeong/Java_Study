@@ -1,0 +1,16 @@
+package java04_control.loop;
+
+public class For_07_1 {
+	public static void main(String[] args) {
+	
+		int amount=0;//총액
+		
+		for( int i = 1, deposit = 10; i<=15; i++, amount += deposit, deposit*=2 ) {
+			
+		}
+		
+		System.out.println(amount);
+				
+	}
+
+}
