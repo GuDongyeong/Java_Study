@@ -1,0 +1,52 @@
+package java04_control.loop;
+
+import java.util.Scanner;
+
+public class ForQuiz_04 {
+	//- 입력받은 두수의 최소 공배수와 최대 공약수를 구하는
+	// 프로그램을 작성하라.
+//		최소공배수 = 공배수 중에서 가장 작은 정수
+//		최대공약수 = 공약수 중에서 절대치가 가장 큰 수
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("두 수를 입력하시오 : ");
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int i;
+		int j;
+		
+		
+		
+		for(i=A;i>0;i--) {
+			
+			for(j=B;j>0;j--) {
+				
+				if(A%i==0 && B%j==0) {
+					if(i==j) {break;}
+				}
+				
+			}if(i==j) {break;}
+		}
+		System.out.println("최대공약수 : "+ i);
+		
+		
+		
+		
+		
+		for(i=1;i<=B;i++) {
+			
+			for(j=1;j<=A;j++) {
+				
+				if(A*i==B*j) {break;}
+				
+			}if(A*i==B*j) {break;}
+			
+		}
+		System.out.println("최소공배수 : " + (A*i));
+		
+		
+	}
+}
