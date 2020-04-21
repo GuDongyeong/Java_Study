@@ -1,0 +1,51 @@
+package java04_control.switchCase;
+
+public class Switch_01 {
+	public static void main(String[] args) {
+		
+		//switch 문
+		// 선택문
+		// switch-case
+//		
+//		switch( 비교대상 ) {// 비교대상은 변수를 이용한다. 값이 일치하는 곳을 찾아서 거기부터 아래까지 출력 
+		//모두 아니면 디폴트값
+//		case 값1:
+//		case 값2:
+//		case 값3:
+//		:
+//		case 값n:
+//		default:
+//		}
+		
+		//-----------------------------
+		
+		int num = 30;
+		
+		switch(num) {
+		case 10:
+			System.out.println("num은 10입니다.");
+			break;
+			
+		case 20:
+			System.out.println("num은 20입니다.");
+			break;
+			
+		case 30:
+			System.out.println("num은 30입니다.");
+			break;
+			
+		default:
+			System.out.println("디폴트 : 10, 20, 30 다 아닙니다.");
+		}
+		//비교대상에 저장된 값과 case에 지정된 값이 같으면 해당 case 구문 위치부터 아래쪽 코드전부를 실행한다.
+		
+		//case에 지정한 값이 없으면 default로 간다.
+		//default는 case들 중에서 가장 마지막에 작성한다.
+		
+		//case마다 break; 를 적어서 해당 case 부분만 실행되도록 만든다
+		
+		//default는 생략 가능
+		
+	}
+
+}
