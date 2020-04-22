@@ -1,0 +1,41 @@
+package java05_array;
+
+public class Array_01 {
+	public static void main(String[] args) {
+		//배열, array
+		//변수들의 묶음, 변수들의 나열
+		
+		int num;//변수 선언
+		num = 123;// 변수에 값 대입
+		
+		//=============================
+		
+		int[] arr;// int형 배열 변수 선언
+		
+		arr = new int[5];// 배열 생성
+		
+		
+		//-------------------------
+		//배열의 저장공간에 값을 대입, 한 공간을 요소라고 한다.
+		
+		arr[0] = 10;
+		arr[1] = 20;
+		arr[2] = 30;
+		arr[3] = 40;
+		arr[4] = 50;
+		
+		//for문을 이용한 배열 전체 대입
+		for(int i=0; i<5;i++) {
+			arr[i]= (i+1)*100;
+		}
+		
+		//for문을 이용한 배열 전체 출력
+		for(int i=0;i<5;i++) {
+			System.out.println(arr[i]);
+		}
+		
+		//배열의 이름은 메모리에 배열이 생성된 위치(reference)를 나타낸다
+		System.out.println(arr);
+	}
+
+}
