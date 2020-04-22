@@ -1,0 +1,51 @@
+package java05_array;
+
+public class Array_04 {
+	public static void main(String[] args) {
+		
+		//문자열, String
+		//char형들의 집합인 char[]의 개념을 사용한다(java내적으로)
+		
+		String str = "Apple"; //문자열
+		
+		char[] chArr = {'A', 'p', 'p', 'l', 'e'}; //char형 배열
+		
+		//문자열의 길이는 스트링변수.length()
+		//배열의 길이는 배열변수.length
+		
+		System.out.println("문자열의 길이 : "+ str.length());
+		System.out.println("char형 배열의 길이 : " + chArr.length);
+		
+		System.out.println("----------------------");
+		
+		//지정한 위치의 문자 출력하기
+		
+		System.out.println("문자열의 첫번째 글자 : "+ str.charAt(0));
+		System.out.println("char형 배열의 두번째 글자 : " + chArr[1]);
+		
+		System.out.println("------------------");
+		
+		//문자열의 글자를 하나씩 출력하기
+		
+		for(int i=0;i<str.length();i++) {
+			System.out.print(str.charAt(i));
+		}
+		
+		System.out.println("----------------------");
+		//char형 배열의 글자를 하나씩 출력하기
+		for(int i=0;i<chArr.length;i++) {
+			System.out.print(chArr[i]);
+		}
+		
+		System.out.println("----------------------");
+		//String ->char[] 변환 : toCharArray() 메소드 이용
+		char[] converted = str.toCharArray();
+		
+		//char[] -> String 변환 : new String()
+		String restore = new String( converted );
+		
+		
+		
+	}
+
+}
