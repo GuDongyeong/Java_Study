@@ -1,0 +1,82 @@
+package java05_array;
+
+
+public class ArrayQuiz_02 {
+	public static void main(String[] args) {
+		int arr[] = {10, 17, 3, 9, 27, 10, 8, 9, 13, 21};
+//		배열이 선언된 뒤 문제를 푸시오
+//
+//		- 위의 숫자를 invert_arr라는 배열에 거꾸로 입력하시오
+//		=> invert_arr : { 21, 13, 9, 8, 10, 27, 9, 3, 17, 10 }
+//		
+		int invert_arr[] = new int[10];
+		
+		for(int i=0; i<arr.length; i++) {
+			invert_arr[arr.length-1-i] = arr[i];
+		}
+		
+		System.out.print("invert_arr : ");
+		for(int i = 0; i<invert_arr.length; i++) {
+			System.out.print(invert_arr[i] + " ");
+		}
+		
+//		- 위의 숫자의
+//		 (짝수번째 인덱스 내용의 합) - (홀수번째 인덱스 내용의 합)을
+//		 구하시오
+//		 	=> -5
+		System.out.println();
+		int evenNum=0;
+		int oddNum=0;
+		
+		for(int i=0; i<arr.length; i++) {
+			if(i%2==0) {evenNum += arr[i];}
+			if(i%2==1) {oddNum += arr[i];}			
+		}
+		System.out.print("arr 배열의 짝수번째 인덱스 합 - 홀수번째 인덱스 합 = ");
+		System.out.println(evenNum - oddNum);
+		
+//
+//		- 위의 숫자를 높은 숫자가 1등이 되게하여
+//		 rank_arr라는 배열에 순위를 입력하시오
+//			=> arr : { 10, 17, 3, 9, 27, 10, 8, 9, 13, 21 }
+//		    => rank_arr :{  5,  3, 10,7,  1,  5, 9, 7,  4,  2 }
+		
+		
+		//i번째 숫자를 나머지 9개의 숫자와 비교하였을 때 rank는 i번째 숫자보다 큰 숫자들의 개수 + 1
+		int[] rank_arr = new int[10];
+		
+		
+		for(int i = 0; i<arr.length;i++) {	//arr의 값을 0~9까지 확인
+			
+			int num=1;
+			
+			for(int j = 0; j<arr.length;j++) { 	//arr의 i번째 값과 j 번째 값을 비교
+				
+				
+				if(arr[i] < arr[j]) { // arr의 i번째 값보다 j번째 값이 클때마다
+					num++; 			// num에 1을 더함 (j값의 개수)
+				}
+			}
+//			System.out.print(num+1); //순위를 출력
+//			System.out.println();
+			
+			rank_arr[i]=num;
+			System.out.print(rank_arr[i] + " ");
+		}
+			
+		
+//		- 중복된 값은 over_arr에 넣고 중복되지
+//		 않은 값은 ret_arr에 입력하시오
+//
+//			정렬까지 했다면
+//			=> over_arr : { 9, 10 }
+//			=> ret_arr : { 3, 8, 13, 17, 21, 27 }
+		
+		
+		int[] over_arr = new int[arr.length];
+		int[] ret_arr = new int[arr.length];
+		
+		
+	}
+
+}
