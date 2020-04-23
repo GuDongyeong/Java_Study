@@ -1,0 +1,45 @@
+package java05_array;
+
+import java.util.Scanner;
+
+public class ArrayQuiz {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("각 층의 인원을 입력하여라");
+		System.out.println("----------------");
+		
+		int[] people = new int[6];
+		int[] money = new int[6];
+		
+		
+		for(int i=0;i<5;i++) {
+			
+			System.out.print((i+1) + "층의 사는 인원은?");
+			
+			people[i] = sc.nextInt();
+			
+			people[5] += people[i];
+		}
+
+		
+		System.out.println("--------------------");
+		
+		for(int i=0; i<5;i++) {
+			
+			money[i] = people[i] * 12000;
+			
+			System.out.println((i+1) + "층의 총 관리비 : " + money[i]);
+			
+			money[5] += money[i];// 이부분은 없어도됨....people[5]가 이미 총 인원을 가지고 있기 때문
+		}
+		
+		System.out.println();
+		System.out.println("건물에 사는 총 인원은 " + people[5] + "입니다.");
+		System.out.println("관리비의 총 급액은 " + money[5] + "입니다.");
+		
+		
+	}
+
+}
