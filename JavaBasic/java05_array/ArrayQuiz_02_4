@@ -1,0 +1,110 @@
+package java05_array;
+
+
+public class ArrayQuiz_02_04 {
+	public static void main(String[] args) {
+		int arr[] = {10, 17, 3, 9, 27, 10, 8, 9, 13, 21};
+
+		
+		
+//		- 중복된 값은 over_arr에 넣고 중복되지
+//		 않은 값은 ret_arr에 입력하시오
+//
+//			정렬까지 했다면
+//			=> over_arr : { 9, 10 }
+//			=> ret_arr : { 3, 8, 13, 17, 21, 27 }
+
+		//버블정렬하여 순서대로 배열--------------------------------------------
+		
+		int tmp;
+
+		for(int i=0;i<arr.length-1;i++) {
+			
+			for(int j=0;j<arr.length-1;j++) {
+				
+				if(arr[j]>arr[j+1]) {
+					tmp = arr[j+1];
+					arr[j+1] = arr[j];
+					arr[j] = tmp;
+				}
+			}
+		}
+		
+		for(int i=0;i<arr.length;i++) {
+			System.out.print(arr[i] + " ");
+		}
+		
+
+		// 각 값이 몇번 중복되는지 구하기 ------------------
+		
+		int[] count = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			for(int j=0;j<arr.length;j++) {
+				
+				if(arr[i]==arr[j]) {count[i]+=1;}
+				
+			}
+		System.out.print(count[i] + " ");
+		}
+		
+		
+		//중복되는 수와 중복되지 않는 수들의 개수 구하기-----------------
+
+		
+		int one = 0;
+		int over = 0;
+		
+		for(int i=0;i<count.length;i++) {
+			if(count[i]==1) {one++;}
+			else {
+				if(i==0 || arr[i]!=arr[i-1]) {
+					over++;
+				}
+			}
+		}
+		
+		int[] ret_arr = new int[one];
+		
+		int[] over_arr = new int[over];
+		
+		
+		// 배열에 대입하기
+		
+		int num1=0;
+		int num2=0;
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			if(count[i]==1) {
+				ret_arr[num1]=arr[i];
+				num1++;
+			}else {
+				if(i==0 || arr[i]!=arr[i-1]) {
+					over_arr[num2]=arr[i];
+					num2++;
+				}
+			}
+		}
+		
+		
+		//---------값 출력-----------------------
+		
+		
+		System.out.print("over_arr : ");
+		for(int i=0;i<over_arr.length;i++) {
+
+			System.out.print(over_arr[i] + " ");
+		}
+		
+		System.out.println();
+		System.out.print("ret_arr : ");
+		for(int i=0;i<ret_arr.length;i++) {
+
+			System.out.print(ret_arr[i] + " ");
+		}	
+	}
+}
+
+
