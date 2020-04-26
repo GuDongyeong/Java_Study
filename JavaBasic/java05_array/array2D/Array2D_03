@@ -1,0 +1,32 @@
+package java05_array.array2D;
+
+public class Array2D_03 {
+	public static void main(String[] args) {
+		
+		int[][] arr = new int[3][];
+		
+		//문법적인 오류 없다.
+		//int형 배열을 세 묶음 만들어 놓은 것.
+		//참조위치를 저장하는 변수를 세 개 저장한다.(참조형 변수)
+		
+//		System.out.println(arr[0][0]);
+		//NullPointerException 발생
+		// 참조값이 null값, 아무것도 참조하고 있지 않다.
+		// int[] arr = null;
+		
+		//-----------------------------------
+		
+		arr[0] = new int[3];
+		arr[1] = new int[7];
+		arr[2] = new int[2];
+		
+		System.out.println(arr.length);//arr가 . 참조하는 대상의 길이
+		
+		
+		//-----------------------------------
+		System.out.println(arr[0].length);//3
+		System.out.println(arr[1].length);//7
+		System.out.println(arr[2].length);//2
+	}
+
+}
