@@ -1,0 +1,59 @@
+package java05_array.array2D;
+
+import java.util.Scanner;
+
+public class Array2D_05 {
+	public static void main(String[] args) {
+		
+		// new 연산자
+		//	동적 할당 연산자
+		
+		// 할당 : 변수공간 생성(저장공간 생성)
+		
+		// 정적 할당 : 프로그램 실행 전에 준비가 끝나는 할당, Compile-time
+		//	int num;
+		//	int[] arr;
+		
+		// 동적 할당 : 프로그램 실행 도중에 준비, Run-time
+		//	arr = new int[5];
+		
+		//----------------------------------------------
+		
+		int num; //int형 변수 선언 -> 정적 할당
+		//변수를 생성하는 것은 정적 할당
+		
+		int[] arr;// int형 배열 변수 선언 -> 정적 할당
+		
+		arr = new int[5]; //int[5] 배열 생성 -> 동적 할당
+		//	동적할당을 하면 참조형 변수에 저장할 수 있는 참조값(위치)을 반환한다.
+		
+		// -----------------------------------------------
+		
+		int[] arr2 = new int[-10]; //동적 할당이므로 컴파일할 때 오류라는 것을 발견하지 못함
+		
+		//	배열 선언시점과 배열 생성 시점은 다르다
+		
+		//	배열 변수 선언 -> 정적 할당
+		
+		//	배열 공간 생성 -> 동적 할당 
+		//		- 프로그램이 관리 주체이기 때문에 사용한 메모리를 운영체제에 반납해야 한다.
+		//		- 자바에서는 JVM이 중간관리자로서 이를 담당한다. 
+		//		- GC, Garbage Collector
+		
+		//--------------------------------------------------
+		
+		// 3명의 점수를 관리하지만 각 학생들의 과목수를 모를 때
+		int[][] score = new int[3][];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for(int i=0;i<score.length;i++) {
+			System.out.println(i + "행 학생의 과목수는?");
+			int len = sc.nextInt();
+			
+			score[i] = new int[len]; //과목수만큼 배열변수에 공간할당
+		}
+		
+	}
+
+}
