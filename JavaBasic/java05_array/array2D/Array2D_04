@@ -1,0 +1,90 @@
+package java05_array.array2D;
+
+import java.util.Scanner;
+
+public class Array2D_04 {
+	public static void main(String[] args) {
+		
+		//2명 학생의 정보
+		// 국어, 영어, 수학 점수를 입력해서 저장..
+		
+		// 총점, 평균을 구한다
+		
+		//전체 출력
+
+		Scanner sc = new Scanner(System.in);
+		
+		
+		// 1.변수 선언, 생성 
+		
+		final int STUDENT_NUM = 2;
+		final int SUBJECT_NUM = 3;
+		
+		int[][] sco = new int[STUDENT_NUM][SUBJECT_NUM];
+		int[] sum = new int[STUDENT_NUM];
+		double[] avg = new double[STUDENT_NUM];
+		
+		//2. 점수 입력
+		
+		
+		String[] subject = {"국어", "영어", "수학"};
+		
+		for(int i=0;i<sco.length;i++) {
+			
+			for(int j=0;j<sco[i].length;j++) {
+				
+				System.out.print((i+1) + "번 째 학생의 " +subject[i] +  " 점수 : ");
+				sco[i][j] = sc.nextInt();
+			}
+		System.out.println();
+		}
+		
+		System.out.println("----------------------------------");
+		
+		// 3. 총점 구하기
+		
+		for(int i=0;i<sum.length;i++) {
+			
+			for(int j=0;j<sco[i].length;j++) {
+				
+				sum[i] += sco[i][j];
+			}
+		}
+		
+//		//TEST
+//		for(int i=0;i<sum.length;i++) {
+//			
+//				System.out.print(sum[i]+ " ");
+//		}
+		
+		//4. 평균 구하기
+		
+		for(int i=0; i<avg.length;i++) {
+			
+			avg[i] = sum[i] / (double)subject.length;
+			
+		}
+		
+		//전체 출럭
+		System.out.println("- - - 결과 - - - ");
+		System.out.println();
+		
+		System.out.println("국어\t영어\t수학\t총점\t평균");
+		
+		for(int i=0;i<sco.length;i++) {
+			
+			for(int j=0;j<sco[i].length;j++) {
+				
+				System.out.print(sco[i][j] + "\t");
+			}
+		System.out.print(sum[i] + "\t" + avg[i]);
+		System.out.println();
+		}
+
+		
+		
+		
+		
+	}
+
+}
