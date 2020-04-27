@@ -1,0 +1,57 @@
+package java05_array.array2D;
+
+public class Array2DQuiz_05 {
+	public static void main(String[] args) {
+//		Q5.
+//		1    2    3    4    5
+//		16   17   18   19   6
+//		15   24   25   20   7
+//		14   23   22   21   8
+//		13   12   11   10   9
+		
+		int[][] arr = new int[5][5];
+		
+		int k = 1;
+		int max = 0;
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			for(int j=0;j<arr.length;j++) {
+				
+				arr[i][j] = k;
+				k++;
+				max = j;
+			}
+			
+			for(int l=;l<arr.length;l++)
+			
+			
+		
+		
+		
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		//------------출력--------------
+		
+		for(int i=0;i<arr.length;i++) {
+			
+			for(int j=0;j<arr[i].length;j++) {
+				
+				System.out.print(arr[i][j] + "\t");
+				
+			}
+			System.out.println();
+		}
+		
+		
+		
+	}
+
+}
