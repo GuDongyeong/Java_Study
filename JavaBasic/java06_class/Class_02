@@ -1,0 +1,18 @@
+package java06_class;
+
+//기능 클래스
+public class Class_02 {
+	
+	//접근 제한자를 적용한 멤버 필드
+	//멤버 필드와 지역 변수와는 다르다. 인스턴스화를 해주어야 변수가 생성된다.
+	//인스턴스화되지 않았을 때는 준비를 해두는 것뿐.
+	
+	private int num1 = 10;
+	
+	int num2 = 20;
+	
+	protected int num3 = 30;
+	
+	public int num4 = 40;
+	
+}
