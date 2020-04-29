@@ -1,0 +1,24 @@
+package java06_class.defaultTest;
+
+import java06_class.Class_02;
+
+//실행 클래스
+public class Main_02_default {
+	
+	public static void main(String[] args) {
+		
+		int num; //main 안에서 활동하는 지역 변수라고 불리고 접근 제한자를 사용할 수 없다.
+		
+		
+		Class_02 cl = null; //객체 변수 선언
+		
+		cl = new Class_02(); //객체 생성, 인스턴스화
+		
+		System.out.println( cl.num4 ); // public
+//		System.out.println( cl.num3 ); // protected package 내
+//		System.out.println( cl.num2 ); // default package 내
+//		System.out.println( cl.num1 ); // private class 내/ not visible - 접근 제한자 문제
+		
+	}
+
+}
