@@ -1,0 +1,36 @@
+package java06_class.field;
+
+public class Memberfield_02 {
+	
+	// 인스턴스 변수
+//	public String city = "Seoul";
+	
+	
+//	 클래스 변수, 정적 변수, static 변수, 객체 변수를 생성하지 않고 클래스명으로 바로 호출 가능
+	public static String city = "Seoul";
+	
+	
+	// 정적 메소드, static 메소드, 클래스 변수를 사용할 수 있도록 함..?
+	public static String getCity() {//static을 붙이지 않으면.. 이 메소드는 객체 변수를 생성하고 사용할 수 밖에없다.
+		return city;
+	}
+	//Memberfield_02.getCity(); 로 호출 가능
+
+	//----------------------------------------------------------
+	
+	// 정적 메소드에서 인스턴스 변수 사용 불가
+	private int num; //인스턴스 변수, 프로그램 실행 후 new를 통해 사용 가능
+	
+	public static void test() {// 정적 메소드, 바인딩과정에서 프로그램 전에 준비되는 메소드
+//		System.out.println(num);
+	}
+	
+	// ** 바인딩 과정?? 메서드와 객체를 묶어놓는 것을 바인딩
+	
+	private static int num2; //정적 변수
+	
+	public void test2() {//일반 메소드
+		System.out.println(num2);
+	}
+	
+}
