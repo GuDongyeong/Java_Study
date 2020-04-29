@@ -1,0 +1,24 @@
+package java06_class.field;
+
+public class Memberfield_01 {//기능 클래스
+	
+	//멤버 필드
+	
+	private int num = 999;
+	private String name;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	// Generate Getters and Setters 단축키 : alt + shift + S + r 
+}
