@@ -1,0 +1,23 @@
+package java06_class.field;
+
+public class Memberfield_03 {
+	
+	private int num = 777; // 인스턴스 변수, 정자
+	private static int num2 = 555; //클래스 변수, 정적 변수, 이탤릭체
+	//파란색은 클래스 멤버
+
+	public void method( int var ) { //var, 매개변수, 지역변수
+		
+		int num = 101; // 지역변수
+		int num2 = 202; // 지역변수
+		
+		System.out.println( num );
+		System.out.println( num2 );
+		
+		System.out.println( this.num );
+//		System.out.println( this.num2 );
+		System.out.println( Memberfield_03.num2 );
+	}//갈색은 지역변수
+	
+	// this 자기 참조 객체
+}
