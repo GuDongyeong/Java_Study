@@ -1,0 +1,50 @@
+package java06_class.field;
+
+public class MemberfieldEx {//실행 클래스
+	public static void main(String[] args) {
+		
+		Memberfield_01 mf01 = new Memberfield_01();
+		Memberfield_01 mf02 = new Memberfield_01();
+		Memberfield_01 mf03 = null; // NullPointer
+		
+		mf01.setNum(100);
+		mf02.setNum(200);
+//		mf03.setNum(300); //NullPointException, 참조대상이 없음 참조연산자 . 왼쪽에 문제가 있는 것
+		
+		System.out.println(mf01.getNum());
+		System.out.println(mf02.getNum());
+		
+		System.out.println("-----------------");
+		
+		System.out.println( mf01.getName());
+		System.out.println( mf02.getName());
+		
+		System.out.println("=================");
+		
+		Memberfield_02 mf04 = new Memberfield_02();
+		Memberfield_02 mf05 = new Memberfield_02();
+		
+		System.out.println( mf04.city );
+		System.out.println( mf05.city );
+				
+		mf04.city = "Busan";
+		
+		System.out.println("-----------------");
+		System.out.println( mf04.city );// warning The static field Memberfield_02.city should be accessed in a static way
+		System.out.println( mf05.city );
+		System.out.println(Memberfield_02.city); //객체 변수를 생성하지 않고 바로 만들수 있다.
+		
+		Memberfield_02.city = "jeju";
+		System.out.println(Memberfield_02.city);
+		System.out.println(Memberfield_02.getCity());
+		
+		System.out.println("================");
+		
+		Memberfield_03 mf06 = new Memberfield_03();
+		
+		mf06.method(77);
+		
+		
+		
+	}
+}
