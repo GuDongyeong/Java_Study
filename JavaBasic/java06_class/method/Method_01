@@ -1,0 +1,31 @@
+package java06_class.method;
+
+public class Method_01 {//기능 클래스
+
+	
+	//2개의 정수를 덧셈해주는 기능
+	
+//	public void method() {	}
+//	 0. 메소드의 기본형태 작성
+//	 1. 메소드 이름 -> 만들고자 하는 기능을 대표하는 이름으로 적절히
+	
+//	 2. 매개변수 작성 -> 기능을 수행하는 데 필요한 입력값을 저장하는 변수, 데이터타입 붙여서 변수 선언,  콤마 붙여서 연결
+	
+//	 3. 실행코드 작성 -> 메소드가 수행할 기능을 작성, 구현
+	
+//	 4. return코드 작성 -> 수행 결과로 사용할 반환할 값 작성
+	
+//	 5. return 데이터타입 작성 -> return 코드 값의 데이터타입을 명시
+	
+	
+	//멤버 메소드
+	public int add(int num1, int num2) {//덧셈기능, add //매개변수 작성 //return의 데이터타입
+		
+		int result = num1 + num2; //실행코드 작성
+		
+		return result; //return 코드 작성 // return을 만나면 메소드를 호출한 곳으로 가서 값을 반환 MethodEx.m01.add
+		
+	}
+	
+	
+}
