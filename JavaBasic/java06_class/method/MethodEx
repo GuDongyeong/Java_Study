@@ -1,0 +1,79 @@
+package java06_class.method;
+
+import java.util.Arrays;
+
+public class MethodEx {//실행 클래스, Excutor
+	public static void main(String[] args) {
+		
+		Method_01 m01 = new Method_01();
+		
+		int res = m01.add(100, 200);
+	
+		System.out.println("결과 : " + res);
+		
+		System.out.println("-----------------------");
+		
+		System.out.println("덧셈 결과 : " + m01.add(45, 32));
+		
+		System.out.println("-----------------------");
+		
+		Method_02 m02 = new Method_02();
+		
+		m02.method01();
+		
+		m02.method02(100);//100 전달인자, 전달인수, argument - 매개변수에 들어갈 값
+		
+		m02.printNum2(34, 72);
+		
+		System.out.println(m02.returnNum());
+		
+		System.out.println(m02.add(2135, 6545));
+		
+		
+		Method_03 m03 = new Method_03();
+		
+		int[] arr = new int[5];// int형 배열
+		int num;
+		
+		arr[2] = 100;
+		num = 200;
+		
+		System.out.println("---메소드 호출 전---");
+		System.out.println( Arrays.toString(arr));
+		System.out.println( num );
+		//--------------------------------------------
+		m03.arrTest01(arr); //참조, Reference 전달
+		m03.arrTest02(num); //값, Value 전달
+		
+		//---------------------------------------------
+		System.out.println();
+		System.out.println("---메소드 호출 후---");
+		System.out.println(Arrays.toString(arr));
+		System.out.println( num );
+		
+		//Arrays.toString(배열)
+		//Arrays 배열을 다루는 메소드를 모아둠
+		//자동으로 배열을 [ , , , ]형태로 문자열로 바꾸어 반환
+		
+		//Arrays.sort(배열)
+		//배열을 정렬해준다.
+		
+		//Arrays.fill(배열, 값)
+		//모든 공간을 값으로 채운다.
+		
+		System.out.println("----------------------------------");
+		
+		int n = m03.arrTest03();
+		n=20;
+		
+		int[] ar = m03.arrTest04();
+		ar[0] = 99;
+		
+		System.out.println(n);
+		System.out.println(ar[2]);
+	
+		
+	}
+	
+
+}
