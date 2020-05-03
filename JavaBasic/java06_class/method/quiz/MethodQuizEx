@@ -1,0 +1,56 @@
+package java06_class.method.quiz;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MethodQuizEx {
+	public static void main(String[] args) {
+		
+		MethodQuiz mq = new MethodQuiz();
+
+//		Q1
+//		
+		mq.print100();
+//
+//		//Q2------------------------------------
+//		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Hello 몇번? : ");
+		int n1 = sc.nextInt();
+		
+		mq.printhello(n1);
+		
+//		
+//		//Q3------------------------------------
+		sc.nextLine();
+		
+		System.out.print("Input Text : ");
+		String str = sc.nextLine();
+		
+		System.out.print("Input Number : ");
+		int n2 = sc.nextInt();
+		
+		mq.input(n2, str);
+		
+		//Q4--------------------------------------
+		
+		int [] arr = {0, 1, 2, 3, 4, 5};
+		
+		mq.print(arr);
+		
+		//-------------------------------------
+		
+		mq.mul10(arr);
+		mq.print(arr);
+		
+		//-------------------------------------
+		
+		int[] res = mq.mul10v2(arr);
+		
+		mq.print(res);
+		mq.print(arr);
+
+		
+	}
+}
