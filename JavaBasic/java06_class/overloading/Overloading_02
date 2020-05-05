@@ -1,0 +1,35 @@
+package java06_class.overloading;
+
+public class Overloading_02 {
+	
+	//int형 전달인자의 문자수(길이)를 구해서 반환
+	// 111222333 -> 9
+	// 1234 -> 4
+	
+	public int getLength(int num) {
+		
+		// int -> String 형변환
+		
+		String str = String.valueOf(num);
+		
+		// 변환된 문자열 길이 리턴
+		
+		int len = str.length();
+
+		return len;
+	}
+	
+	public int getLength(boolean bln) {
+		
+		String str = String.valueOf(bln);
+		int len = str.length();
+		return len;
+	}
+	
+	public int getLength(double num) {
+		
+		return String.valueOf(num).length();
+	}
+	
+
+}
